@@ -44,7 +44,7 @@ function playGame() {
         console.log(`Round ${i+1}, Player chose: ${playerSelection}, Computer chose: ${computerSelection}`);
 
        const result = playRound(playerSelection, computerSelection);
-       console.log(results);
+       console.log(result);
 
        if (result.includes("Win")) {
         playerScore++;
