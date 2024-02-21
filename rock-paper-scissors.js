@@ -38,7 +38,13 @@ function playGame() {
     let playerScore = 0;
     let computerScore = 0;//stores the score from each round
 
-    
+    for (let i= 0; i < 5; i++) {
+        const playerSelection = prompt("Choose Rock, Paper, Scissor")
+        const computerSelection = getComputerChoice();
+        console.log(results);
+
+       
+    }
 }
     
 
