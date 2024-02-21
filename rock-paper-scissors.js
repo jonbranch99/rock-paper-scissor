@@ -11,7 +11,7 @@ var Rock =("Rock");
 var Paper =("Paper");
 var Scissors =("Scissors");
 
-let playerSelection = "Rock";
+let playerSelection = prompt("Choose");
 let computerSelection = getComputerChoice();
  console.log(playRound(playerSelection, computerSelection));
 
