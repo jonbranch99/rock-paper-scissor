@@ -11,7 +11,7 @@ var Rock =("Rock");
 var Paper =("Paper");
 var Scissors =("Scissors");
 
-let playerSelection = prompt("Choose");
+let playerSelection = prompt("Choose Rock, Paper, or Scissors");
 let computerSelection = getComputerChoice();
  console.log(playRound(playerSelection, computerSelection));
 
@@ -33,3 +33,13 @@ if (playerSelection === Rock && computerSelection === Paper) {
 }
 
 }
+
+function playGame() {
+    let playerScore = 0;
+    let computerScore = 0;//stores the score from each round
+
+    
+}
+    
+
+
