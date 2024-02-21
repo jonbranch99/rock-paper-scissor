@@ -43,7 +43,8 @@ function playGame() {
         const computerSelection = getComputerChoice();
         console.log(results);
 
-       
+       const result = playRound(playerSelection, computerSelection);
+       console.log(results);
     }
 }
     
