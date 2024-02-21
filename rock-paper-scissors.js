@@ -41,7 +41,7 @@ function playGame() {
     for (let i= 0; i < 5; i++) {
         const playerSelection = prompt("Choose Rock, Paper, Scissor")
         const computerSelection = getComputerChoice();
-        console.log(results);
+        console.log(`Round ${i+1}, Player chose: ${playerSelection}, Computer chose: ${computerSelection}`);
 
        const result = playRound(playerSelection, computerSelection);
        console.log(results);
