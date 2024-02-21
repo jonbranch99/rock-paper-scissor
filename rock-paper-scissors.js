@@ -52,7 +52,15 @@ function playGame() {
         computerScore++;
        }
 
-       console.log(`Current Score` => Player: ${playerScore}, Computer: ${computerScore});
+       console.log(`Current Score => Player: ${playerScore}, Computer: ${computerScore}`);
+    }
+
+    if (playerScore > computerScore) {
+        console.log("Congratulations! You won the game.");
+    } else if (playerScore < computerScore) {
+        console.log("Sorry, you lost the game. Better luck next time!");
+    } else {
+        console.log("It's a tie game!");
     }
 }
     
