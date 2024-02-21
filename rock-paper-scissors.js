@@ -51,6 +51,8 @@ function playGame() {
        } else if (result.includes("Lose")) {
         computerScore++;
        }
+
+       console.log(`Current Score` => Player: ${playerScore}, Computer: ${computerScore});
     }
 }
     
