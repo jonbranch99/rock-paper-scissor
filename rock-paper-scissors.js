@@ -1,4 +1,4 @@
-choices = ["Rock", "Paper", "Scissors"]; //choices is an array containing the three possible choices: 'Rock', 'Paper', and 'Scissors'
+choices = ["Rock", "Paper", "Scissors"]; 
 function getComputerChoice() {
 
     let random = Math.floor(Math.random() * choices.length);
@@ -38,13 +38,12 @@ function playGame() {
     let playerScore = 0;
     let computerScore = 0;//stores the score from each round
 
-    for (let i= 0; i < 5; i++) {
+    
         const playerSelection = prompt("Choose Rock, Paper, Scissor")
         const computerSelection = getComputerChoice();
-        console.log(`Round ${i+1}, Player chose: ${playerSelection}, Computer chose: ${computerSelection}`);
-
+        
        const result = playRound(playerSelection, computerSelection);
-       console.log(result);
+       
 
        if (result.includes("Win")) {
         playerScore++;
@@ -52,17 +51,17 @@ function playGame() {
         computerScore++;
        }
 
-       console.log(`Current Score => Player: ${playerScore}, Computer: ${computerScore}`);
+      
     }
 
     if (playerScore > computerScore) {
-        console.log("Congratulations! You won the game.");
+    
     } else if (playerScore < computerScore) {
-        console.log("Sorry, you lost the game. Better luck next time!");
+    
     } else {
-        console.log("It's a tie game!");
+    
     }
-}
+
 
 playGame();
     
